@@ -9,15 +9,17 @@
 </head>
 
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu">
         <div class="main-content menu-content">
-            <div class="logo">
+            <div class="logo" onclick="getElementById('close-menu').checked = false;">
                 <a href="#intro">
                     <img class="logo-img" src="assets/img/all.png" alt="">
                 </a>
             </div>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li>
                         <a href="#apex">Apex</a>
                     </li>
@@ -191,18 +193,43 @@
         <div class="main-content intro-content">
             <div class="intro-text">
                 <h2>Contact</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur nostrum iste suscipit ut soluta
-                    aliquid voluptatum, quos asperiores odit qui quae repudiandae autem sunt commodi id ipsum numquam.
-                    Incidunt, at.</p>
+                <p>Title update 2 is out now!<br>Send me a message if you have any questions or sugestions!</p>
             </div>
-            <div class="intro-img">
-                <img src="assets/img/dosha_bg.jpg" alt="Doshaguma pack attacks!">
+            <div class="contact-img">
+                <img src="assets/img/tu2.jpg" alt="Title Update 2 monsters (Lagiacrus and Seregios)">
             </div>
             <div class="contact-form">
-                <h1>teste</h1>
+                <fieldset class="form-grid">
+                    <legend>Contact me</legend>
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email" placeholder="Your e-mail">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit">Send message</button>
+                    </div>
+                </fieldset>
             </div>
         </div>
     </section>
+    <footer id="footer" class="caio-footer">
+        <p><a rel="nofollow" target="_blank" href="https://github.com/gaaiuss">Made with <span class="heart">❤</span> by
+                Caio Castro</a></p>
+    </footer>
+
+    <a class="back-to-top" href="#"></a>
 </body>
 
 </html>
