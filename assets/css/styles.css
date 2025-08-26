@@ -406,15 +406,9 @@ tfoot td, table th {
 
     .grid h3 {
         font-size: 2rem;
-        position: relative;
-        padding-bottom: 3rem;
-        padding-left: 5rem;
     }
 
     .grid h3::before {
-        counter-increment: grid-counter;
-        content: counter(grid-counter);
-        position: absolute;
         font-size: 4dvh;
         top: -0.3rem;
         left: 1.5rem;
