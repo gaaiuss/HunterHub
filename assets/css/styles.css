@@ -394,3 +394,29 @@ tfoot td, table th {
         content: url(../img/menu_icon_black.png);
     }
 }
+
+@media (max-width: 400px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .grid h3 {
+        font-size: 2rem;
+        position: relative;
+        padding-bottom: 3rem;
+        padding-left: 5rem;
+    }
+
+    .grid h3::before {
+        counter-increment: grid-counter;
+        content: counter(grid-counter);
+        position: absolute;
+        font-size: 4dvh;
+        top: -0.3rem;
+        left: 1.5rem;
+    }
+}
