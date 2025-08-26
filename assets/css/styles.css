@@ -37,7 +37,6 @@ table td, table th {
     border: 0.1rem solid var(--border-color);
     text-align: left;
     padding: 1rem;
-    white-space: nowrap;
 }
 
 tfoot td, table th {
@@ -156,6 +155,7 @@ tfoot td, table th {
 }
 
 .intro-img img {
+    min-width: auto;
     max-width: 100%;
     height: auto;
 }
@@ -247,7 +247,7 @@ tfoot td, table th {
 }
 
 .responsive-table {
-    overflow: hidden;
+    width: 100%;
     overflow-x: auto;
 }
 
