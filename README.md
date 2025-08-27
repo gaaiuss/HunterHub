@@ -1,2 +1,2 @@
 # HunterHub
-Studying HTML and CSS
+A Monster Hunter Wilds based landing page made using only HTML and CSS
