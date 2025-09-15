@@ -301,6 +301,7 @@ tfoot td, table th {
 .form-group button:hover {
     background: var(--primary-color);
     color: black;
+    cursor: pointer;
 }
 
 .form-group ::placeholder {
